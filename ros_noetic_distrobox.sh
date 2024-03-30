@@ -22,3 +22,7 @@ distrobox exec ubuntu -- bash -c 'source /opt/ros/noetic/setup.bash'
 # Run ROS Noetic
 distrobox exec ubuntu -- bash -c 'roscore'
 
+# Export ROS binaries to current directory on host machine
+distrobox export ubuntu --all
+
+echo "ROS Noetic binaries exported to current directory"
